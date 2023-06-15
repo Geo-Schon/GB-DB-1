@@ -23,28 +23,3 @@ WHERE Product_count > 2;
 
 SELECT * FROM gb_db_1.phone_base
 WHERE Manufacturer = "Samsung";
-
-
-SELECT Product_name, Manufacturer, Product_count, Price, Price * Product_count AS Total_price
-FROM gb_db_1.phone_base
-WHERE Price * Product_count > 100000 AND Price * Product_count < 145000;
-
-
-SELECT * FROM gb_db_1.phone_base
-WHERE Product_name 
-LIKE "iPhone%";
-
-
-SELECT * FROM gb_db_1.phone_base
-WHERE Product_name 
-LIKE "%Galaxy%"; 
-
-
-SELECT * FROM gb_db_1.phone_base
-WHERE Product_name 
-RLIKE "[0-9]";
-
-
-SELECT * FROM gb_db_1.phone_base
-WHERE Product_name
-RLIKE "[8]";
